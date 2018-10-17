@@ -1,0 +1,61 @@
+ /*1. un obrero si trabaja 40 horas o menos se le pagara, a quincelmil pesos por hora,pero si trabaja mas de cuarenta horas  se le pagara 15 mil por cada hora de las primeras 
+   , y veinte mil por cada hora extra* hallar el total a pagar 
+ 
+ 
+*/
+import javax.swing.JOptionPane;
+public class Parcial_PrimerCorte {
+
+    
+    public static void main (String [] arg){
+       double horas_semanal,horas_extra,salario_semanal=0;
+        horas_semanal = Double.parseDouble(JOptionPane.showInputDialog("Digite horas semanales trabajadas: "));
+        horas_extra = Double.parseDouble(JOptionPane.showInputDialog("Digite horas extras trabajadass: "));
+       
+       
+       
+        if(horas_semanal>40){
+         salario_semanal = horas_semanal*15000 + horas_extra*20000;
+        JOptionPane.showMessageDialog(null," Esta semana usted gano " +salario_semanal);   
+       }
+        
+        else{
+        salario_semanal = horas_semanal*15000;    
+        JOptionPane.showMessageDialog(null," Esta semana usted gano " +salario_semanal);
+    } 
+
+
+/*
+ -En una reunion familiar hay hombres mujeres y niños, lea el numero de hombres mujeres y niños y diga el porcentaje de hombres mujeres y niños que hay en la reunion
+ */
+
+/**
+ *
+ * @author estudiante
+ */
+import javax.swing.JOptionPane;
+public class Segundo_ejercio {
+    public static void main (String [] arg){
+    double nHombres,Nmujeres,Nniños,porH,porM,porN,Npersonas=0;
+    nHombres = Double.parseDouble(JOptionPane.showInputDialog("Digite numero de hombres: "));
+    Nmujeres = Double.parseDouble(JOptionPane.showInputDialog("Digite numero de mujeres: "));
+    Nniños = Double.parseDouble(JOptionPane.showInputDialog("Digite numero de niños: "));
+    
+    Npersonas = nHombres+Nmujeres+Nniños;
+    porH = (nHombres/Npersonas)*100;
+    porM = (Nmujeres/Npersonas)*100;
+    porN = (Nniños/Npersonas)*100;
+    
+   
+ JOptionPane.showMessageDialog(null," El porcentaje de hombres es: " +porH);
+ JOptionPane.showMessageDialog(null," El porcentaje de mujeres es: " +porM);
+JOptionPane.showMessageDialog(null," El porcentaje de niños es " +porN);  
+    
+   
+     
+        
+        
+        
+        
+    }
+}
