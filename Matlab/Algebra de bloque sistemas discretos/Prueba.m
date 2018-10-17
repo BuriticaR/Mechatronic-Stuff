@@ -1,0 +1,6 @@
+z=tf('z')
+g1=input('G1:')
+g2=input('G2:')
+G=series(g1,g2)
+h1=input('H1:')
+P=feedback(G,h1)
